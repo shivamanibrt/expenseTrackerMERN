@@ -1,0 +1,38 @@
+### root api
+GET  http://localhost:1000/
+
+### Get a user logn
+GET http://localhost:1000/api/v1/user
+
+### Create new user
+POST  http://localhost:1000/api/v1/user/login
+Content-Type: application/json
+
+{
+    "email": "aayush@mail.com",
+    "password": "123456"
+}
+
+## <------------------- Transaction  --------------->
+### fetch get get method
+GET http://localhost:1000/api/v1/transaction
+Authorization: 64d95b0efcd2265c94a4d424s
+
+
+### Send all task
+POST http://localhost:1000/api/v1/transaction
+Content-Type: application/json
+
+{
+    "userId": "64d95b0efcd2265c94a4d424",
+    "type": "income",
+    "title": "shopping shoes",
+    "amount": 333
+}
+
+### Update task
+PATCH http://localhost:1000/api/v1/transaction
+
+### Delete task
+DELETE http://localhost:1000/api/v1/transaction
+
